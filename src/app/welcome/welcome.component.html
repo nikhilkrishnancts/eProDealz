@@ -1,0 +1,57 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+        <img src="assets/images/header-banner.jpg" style="width:100%;height:250px"/>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <h1 style="text-align:center">
+                Welcome to <label [ngStyle]="{backgroundColor: getColor()}">{{title}}</label>!
+            </h1>
+        </div>
+        <div class="col-sm-8">
+            <app-product-details></app-product-details>
+        </div>
+    </div>
+</div>
+  
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+          <div class="item active">
+          <img src="{{motivationImg}}" alt="" class="img-responsive" style="width:100%">
+             <div class="carousel-caption">
+                <app-intro></app-intro>
+             </div>
+          </div>
+      </div>
+  </div>
+  </div></div></div>
+  <!--<div [ngStyle]="{'background-image':'url('+motivationImg+')','background-repeat':'no-repeat','height':'500px'}">
+      <table [ngStyle]="{'width':'100%'}">
+        <tr>
+          <td>
+              <app-intro></app-intro>
+              <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">    
+          </td>
+          <td [ngStyle]="{'float':'center'}">
+              <app-product-details></app-product-details>
+          </td>
+        </tr>
+      </table>
+  </div>-->
+  <div class="container-fluid">
+        <h1>Unique</h1>
+  </div>
+  <div class="container-fluid">
+  <table>
+    <tr>
+      <td *ngFor="let achiever of achievers">
+        <img src="{{achiever}}" width="200px;" height="320px;"/>
+      </td>
+    </tr>
+  </table>
+</div>
